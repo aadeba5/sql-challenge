@@ -14,10 +14,12 @@ CREATE TABLE [Departments] (
     )
 )
 
-CREATE TABLE [dept_employees] (
-    [dept_no] varchar  NOT NULL ,
-    [emp_no] int  NOT NULL 
-)
+CREATE TABLE dept_employees (
+    emp_no int NOT NULL, 
+	dept_no varchar  NOT NULL,
+	PRIMARY KEY(emp_no, dept_no)
+);
+
 
 CREATE TABLE [dept_manager] (
     [dept_no] varchar  NOT NULL ,
